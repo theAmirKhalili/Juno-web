@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Sora-Regular;
+    src : url(/fonts/Sora-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: Sora-Medium;
+    src : url(/fonts/Sora-Medium.ttf) format('truetype');
+}
+@font-face {
+    font-family: Sora-Bold;
+    src : url(/fonts/Sora-Bold.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +28,6 @@ body {
 }
 
 nav{
-
     font-size: 12px;
     background-color: white;
     height: 80px;
@@ -30,7 +42,6 @@ nav{
     order: 2;
     display: flex;
     text-decoration: none;
-   
 }
 
 .logo{
@@ -38,24 +49,28 @@ nav{
     padding-top: 10px;
     margin-right: 1.5rem;
 }
+
 nav ul{
     width: 100%;
     margin-top: 1.25rem;
     margin-right: 0;
     text-align: right;
 }
+
 nav ul li{
     display: inline-block;
 
 }
+
 nav ul li a{
    opacity: .7;
    color:#373737;
-
-   font-size: 17px;
-   padding: 7px 13px;
+   font-family: Sora-Regular;
+   font-size: 16px;
+   padding: 7px 12px;
    border-radius: 3px;
 }
+
 a:hover {
     opacity: 1;
 }
