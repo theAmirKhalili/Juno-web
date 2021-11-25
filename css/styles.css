@@ -28,7 +28,7 @@ body {
     background-color: white;
 }
 
-nav{
+.navbar{
     font-size: 12px;
     background-color: white;
     height: 80px;
@@ -44,6 +44,7 @@ nav{
     display: flex;
     text-decoration: none;
     position: fix;
+    justify-content: space-between;
 }
 
 .logo{
@@ -52,18 +53,17 @@ nav{
     margin-right: 1.5rem;
 }
 
-nav ul{
-    width: 100%;
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    justify-content: flex-end;
     margin-top: 1.25rem;
-    margin-right: 0;
-    text-align: right;
+    margin-right: 1rem;
 }
 
-nav ul li{
-    display: inline-block;
-    
 
-}
 
 nav ul li a{
    opacity: .7;
@@ -72,9 +72,56 @@ nav ul li a{
    font-size: 17px;
    padding: 10px 13px;
    border-radius: 3px;
+   transition: 0.3s ease;
 }
 
 a:hover {
     opacity: 1;
 }
 
+
+input[type=checkbox]{
+    display: none;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    user-select: none;
+    margin-top: 0.6rem;
+}
+
+@media (max-width: 650px) {
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:white;
+     right: 0;
+     left: 0;
+     text-align: center;
+     margin: 1.1rem 0px;
+    }
+
+    .menu li:hover {
+     display: inline-block;
+     width: 25%;
+     background-color:#65b4ff;
+     transition: 0.3s ease;
+    }
+
+    .nav-item:hover {
+        color: white;
+    }
+
+    .menu li + li {
+     margin-top: 20px;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+
+    .hamburger {
+     display: block;
+    }
+
+}

@@ -7,14 +7,26 @@
     <title>Juno</title>
 </head>
 <body>
-    <nav>
+    
+    <nav class="navbar">
         <a href="#" class="logo"><img src="/images/logo2.svg" alt="logo" width="50px"></a>
-        <ul>
-            <li><a class="nav-item" href="#">ABOUT</a></li>
-            <li><a class="nav-item" href="#">FEATURES</a></li>
-            <li><a class="nav-item" href="#">TEAM</a></li>
-            <li><a class="nav-item" href="#">CONTACT US</a></li>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <li><a class="nav-item" href="#">ABOUT</a></li>
+                <li><a class="nav-item" href="#">FEATURES</a></li>
+                <li><a class="nav-item" href="#">TEAM</a></li>
+                <li><a class="nav-item" href="#">CONTACT US</a></li>
+            </div>
+            
         </ul>
+        
     </nav>
+
+    <section id="about" class="content">
+        <h2>About</h2>
+        <p>The largest cloud offers search engine. Freely browse VM prices from 25+ providers globally.</p>
+    </section>
 </body>
 </html>
