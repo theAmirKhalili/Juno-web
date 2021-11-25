@@ -99,13 +99,15 @@ input[type=checkbox]{
      left: 0;
      text-align: center;
      margin: 1.1rem 0px;
+     
     }
 
     .menu li:hover {
      display: inline-block;
-     width: 25%;
+     width: 30%;
      background-color:#65b4ff;
      transition: 0.3s ease;
+     padding: 3px;
     }
 
     .nav-item:hover {
