@@ -38,12 +38,12 @@ body {
     padding: 1rem;
     box-shadow: 0 0.05em 0.5em rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s;
-    z-index: -1;
+    z-index: 1000;
     flex: 1 0 100%;
     order: 2;
     display: flex;
     text-decoration: none;
-    position: fix;
+    position: sticky;
     justify-content: space-between
 }
 
