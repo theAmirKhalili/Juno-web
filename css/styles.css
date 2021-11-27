@@ -125,7 +125,7 @@ input[type=checkbox]{
     .hamburger {
      display: block;
     }
-    
+
 }
 
 .slides1 {
@@ -141,5 +141,5 @@ input[type=checkbox]{
 .slides {
     margin: 0 20px;
     display: none;
-    height: 2rem;
+    height: 300px;
 }
