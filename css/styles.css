@@ -1,14 +1,14 @@
 @font-face {
     font-family: Sora-Regular;
-    src : url(/fonts/Sora-Regular.ttf) format('truetype');
+    src : url(/fonts/Sora-Regular.ttf) format('truetype')
 }
 @font-face {
     font-family: Sora-Medium;
-    src : url(/fonts/Sora-Medium.ttf) format('truetype');
+    src : url(/fonts/Sora-Medium.ttf) format('truetype')
 }
 @font-face {
     font-family: Sora-Bold;
-    src : url(/fonts/Sora-Bold.ttf) format('truetype');
+    src : url(/fonts/Sora-Bold.ttf) format('truetype')
 }
 
 * {
@@ -16,7 +16,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
@@ -25,7 +25,7 @@ body {
     direction: ltr;
     margin: 0px;
     padding: 0px;
-    background-color: white;
+    background-color: white
 }
 
 .navbar{
@@ -44,13 +44,13 @@ body {
     display: flex;
     text-decoration: none;
     position: fix;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .logo{
     display: flex;
     padding-top: 10px;
-    margin-right: 1.5rem;
+    margin-right: 1.5rem
 }
 
 
@@ -60,7 +60,7 @@ body {
     font-size: 18px;
     justify-content: flex-end;
     margin-top: 1.25rem;
-    margin-right: 1rem;
+    margin-right: 1rem
 }
 
 
@@ -72,22 +72,22 @@ nav ul li a{
    font-size: 17px;
    padding: 10px 13px;
    border-radius: 3px;
-   transition: 0.3s ease;
+   transition: 0.3s ease
 }
 
 a:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 
 input[type=checkbox]{
-    display: none;
+    display: none
 }
 .hamburger {
     display: none;
     font-size: 30px;
     user-select: none;
-    margin-top: 0.6rem;
+    margin-top: 0.6rem
 }
 
 @media (max-width: 650px) {
@@ -98,8 +98,7 @@ input[type=checkbox]{
      right: 0;
      left: 0;
      text-align: center;
-     margin: 1.1rem 0px;
-     
+     margin: 1.1rem 0px
     }
 
     .menu li:hover {
@@ -107,23 +106,23 @@ input[type=checkbox]{
      width: 30%;
      background-color:#65b4ff;
      transition: 0.3s ease;
-     padding: 3px;
+     padding: 3px
     }
 
     .nav-item:hover {
-        color: white;
+        color: white
     }
 
     .menu li + li {
-     margin-top: 20px;
+     margin-top: 20px
     }
 
     input[type=checkbox]:checked ~ .menu{
-     display: block;
+     display: block
     }
 
     .hamburger {
-     display: block;
+     display: block
     }
 
 }
@@ -131,15 +130,61 @@ input[type=checkbox]{
 .slides1 {
     position: relative;
     top: 50px;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    text-align: -webkit-center
+    
 }
 
 .slides {
-    margin: 0 20px;
-    display: none;
-    height: 300px;
+    width: 80%;
+    height: 50%;
+    display: grid;
+    grid-template-areas: 
+    'slide_image slide_title'
+    'slide_image sub_title';
+    grid-gap:0px;
+    justify-content: center;
+    align-items: center
+    
+}
+.slide_image { 
+    grid-area:slide_image; 
+    height:300px
+}
+
+.slide_title {
+    grid-area: slide_title;
+    text-align: left;
+    padding: 20px 10px;
+    padding-bottom: 0px;
+    font-family: Sora-Bold;
+    font-size: 2rem;
+    color: #373737
+}
+.sub_title {
+    grid-area:sub_title;
+    text-align: left;
+    padding: 40px 10px;
+    padding-top: 0px;
+    font-size: 1.2rem;
+    color: #3737375e
+}
+
+@media (max-width: 1100px) {
+    .slide_image {
+        height: 200px
+    }
+}
+
+@media (max-width: 710px) {
+    .slides {
+        grid-template-areas: 
+        'slide_image'
+        'slide_title'
+        'sub_title';
+        width: 70%;
+        height: auto;
+        margin-bottom: 50px;
+        top: 150px
+    }
 }
