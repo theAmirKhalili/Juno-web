@@ -143,10 +143,10 @@ input[type=checkbox]{
 .slides1 {
     height: 400px;
     position: relative;
-    margin: 50px 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
     text-align: -webkit-center
-    
 }
 
 .slides {
@@ -159,7 +159,6 @@ input[type=checkbox]{
     grid-gap:5px;
     justify-content: center;
     align-items: center
-    
 }
 .slide_image { 
     grid-area:slide_image; 
@@ -206,6 +205,103 @@ input[type=checkbox]{
         justify-items: center
     }
 }
+
+#ABOUT {
+    scroll-margin-top: 100px;
+   
+}
+#FEATURES {
+    scroll-margin-top: 100px;
+}
+#TEAM {
+    scroll-margin-top: 100px;
+}
+#CONTACT {
+    scroll-margin-top: 100px;
+}
+
 .feature {
     position: relative;
+    background-color: #edf9ff;
+    text-align: center;
+    padding-top:30px ;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-txt-container {
+    padding: 2px 16px;
+    font-size: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: -webkit-center;
+    text-align: center;
+    margin: 1.3rem 1rem;
+    padding-bottom: 20px;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.card-title {
+    font-family: Sora-Bold;
+    padding: 1rem;
+}
+
+.card-sub-title {
+    font-family: Sora-Regular;
+    padding: 1rem;
+
+}
+
+.card-btn {
+    opacity: 0.7;
+    border: none;
+    background-color: #0074e4;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0.1875rem;
+    align-self: center;
+}
+
+.card-btn:hover {
+    opacity: 1;
+}
+
+.txt_title {
+    font-family: Sora-Bold;
+    font-size: 2rem;
+}
+
+@media (max-width: 710px) {
+    .cards {
+        flex-direction: column;
+        
+    }
+    .card {
+        width: 60%;
+    }
 }
