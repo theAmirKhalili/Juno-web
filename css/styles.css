@@ -90,7 +90,7 @@ input[type=checkbox]{
     margin-top: 0.6rem
 }
 
-@media (max-width: 650px) {
+@media (max-width: 710px) {
     .menu { 
      display:none;
      position: absolute;
@@ -155,7 +155,7 @@ input[type=checkbox]{
 .slide_title {
     grid-area: slide_title;
     text-align: left;
-    padding: 20px 10px;
+    padding: 70px 10px;
     padding-bottom: 0px;
     font-family: Sora-Bold;
     font-size: 2rem;
@@ -164,7 +164,7 @@ input[type=checkbox]{
 .sub_title {
     grid-area:sub_title;
     text-align: left;
-    padding: 40px 10px;
+    padding: 70px 10px;
     padding-top: 0px;
     font-size: 1.2rem;
     color: #3737375e
