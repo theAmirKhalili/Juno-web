@@ -1,5 +1,5 @@
 <?php
-
+#include "index.html";
 
 $Message = '';
 $Email = "";
@@ -20,8 +20,12 @@ if(isset($_POST['submit']))
         $file = fopen("file.txt", "a");
         fwrite($file, $for_write);
         fclose($file);
+        header('Location: index.html');
+        exit;
     }
-    echo $validationMessage;
+    header('Location: index.html');
+    exit;
+    #echo $validationMessage;
 }
 
 
