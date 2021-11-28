@@ -1,14 +1,14 @@
 @font-face {
   font-family: Sora-Regular;
-  src: url(/fonts/Sora-Regular.ttf) format("truetype");
+  src: url(../fonts/Sora-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: Sora-Medium;
-  src: url(/fonts/Sora-Medium.ttf) format("truetype");
+  src: url(../fonts/Sora-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: Sora-Bold;
-  src: url(/fonts/Sora-Bold.ttf) format("truetype");
+  src: url(../fonts/Sora-Bold.ttf) format("truetype");
 }
 
 * {
