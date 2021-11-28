@@ -45,6 +45,7 @@ body {
   text-decoration: none;
   position: sticky;
   justify-content: space-between;
+  opacity: 0.95;
 }
 
 .logo {
@@ -186,7 +187,7 @@ input[type="checkbox"] {
 
 @media (max-width: 710px) {
   .slides1 {
-    height: 650px;
+    height: 500px;
   }
   .slides {
     grid-template-areas:
@@ -203,9 +204,11 @@ input[type="checkbox"] {
 
 #ABOUT {
   scroll-margin-top: 100px;
+ 
 }
 #FEATURES {
   scroll-margin-top: 100px;
+  text-align: center;
 }
 #TEAM {
   scroll-margin-top: 100px;
@@ -446,4 +449,23 @@ input[type="checkbox"] {
 .social-links > a {
     margin: 10px;
     padding: 10px;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+
+.dots {
+    text-align: center;
+    margin-bottom: 50px;
 }
