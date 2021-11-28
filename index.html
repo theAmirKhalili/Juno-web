@@ -164,17 +164,17 @@
 
     <div class="class-contact" id="CONTACT">
         <div class="txt_title">Contact Us</div>
-            <form class="form" action="#">
+            <form class="form" action="contactus.php" method="POST">
                 <div class="email">
-                    <input class="input-field" type="email" placeholder="Email" name="email" required>
+                    <input class="input-field" type="email" placeholder="Email" name="_email" required>
                 </div>
                 <div class="subject">
-                    <input class="input-field" type="text" placeholder="Subject" name="subject">
+                    <input class="input-field" type="text" placeholder="Subject" name="_subject">
                 </div>
                 <div class="txt-area">
-                    <textarea class="input-field txtArea" type="text" placeholder="Text" name="txt"></textarea>
+                    <textarea class="input-field txtArea" type="text" placeholder="Text" name="_txt"></textarea>
                 </div>
-                <input class="submit" type="submit" value="Submit">
+                <input class="submit" type="submit" name="submit" value="Submit">
             </form>
     </div>
 
