@@ -246,7 +246,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 28%;
+  width: 300px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   transition: 0.3s;
@@ -304,9 +304,6 @@ input[type="checkbox"] {
   .cards {
     flex-direction: column;
   }
-  .card {
-    width: 60%;
-  }
 }
 
 .fa {
@@ -337,7 +334,7 @@ input[type="checkbox"] {
 
 .half {
   padding: 20px;
-  width: 19%;
+  width: 200px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -347,7 +344,7 @@ input[type="checkbox"] {
 
 @media (max-width: 710px) {
   .half {
-    width: 30%;
+    width: 150px;
   }
 }
 .form {
